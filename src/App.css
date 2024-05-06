@@ -1,7 +1,7 @@
-.card{
-
+.App-header{
+  border: 1px solid #ccc;
+  border-radius: 10px;
 }
-
 .App {
   font-family: Arial, sans-serif;
 }
@@ -27,6 +27,30 @@
 }
 .box:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.tugas8-container {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 2em;
+  margin: 5em auto;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
 
 

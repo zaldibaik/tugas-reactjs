@@ -1,13 +1,21 @@
+
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Tugas8 from './tugas8';
+import Tugas7 from './tugas7';
+import Tugas9 from './tugas9';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    <Tugas7/>
+    <Tugas8/>
+    <Tugas9/>
   </React.StrictMode>
 );
 
