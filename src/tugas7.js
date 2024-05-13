@@ -1,30 +1,28 @@
 import React from "react";
+import { Card } from "flowbite-react";
+
 class tugas7 extends React.Component {
   render() {
     return (
-      <header className="App">
-        <div className="card">
-          <div className="container">
-            <div className="App">
-              <div className="box">
+        <div className="container mx-auto">
+              <Card className="gap-4">
                 <h1 className="title">Hi, Saya John</h1>
-                <hr></hr>
+                <hr />
                 <p className="paragraph">
                   Saya dari Kelas 12 sudah berhasil menginstall React
                 </p>
-              </div>
-            </div>
-            <div className="box">
+              </Card>
+              <br></br>
+            <Card className="gap-4">
               <h1 className="title">Hi, Saya John</h1>
-              <hr></hr>
+              <hr />
               <ul>
                 <li><b>nama: </b>Zaldi</li>
                 <li><b>Email: </b>zaldizaldizladi032@gmail.com</li>
               </ul>
-            </div>
+            </Card>
           </div>
-        </div>
-      </header>
+      
     );
   }
 }

@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
 .App-header{
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -11,7 +16,7 @@
   margin-bottom: 0.5em;
 }
 
-.paragrahp {
+.paragraph {
   font-size: 1em;
   line-height: 1.5;
 }
@@ -51,6 +56,4 @@ button {
 
 button:hover {
   background-color: #0056b3;
-}
-
-
+} */

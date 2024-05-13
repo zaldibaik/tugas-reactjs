@@ -1,4 +1,4 @@
-
+import { Card, Button } from "flowbite-react";
 import React, { Component } from 'react';
 
 class Tugas8 extends Component {
@@ -16,13 +16,15 @@ class Tugas8 extends Component {
   render() {
     const { count } = this.state;
     return (
-      <div className="tugas8-container">
+      <div className="container mx-auto justify-center">
+      <Card>
         <p>{count}</p>
         {count > 10 ? (
           <p>sudah lebih dari 10</p>
         ) : (
-          <button onClick={this.handleIncrement}>Tambah</button>
+          <Button className='btn' onClick={this.handleIncrement}>Tambah</Button>
         )}
+      </Card>
       </div>
     );
   }
