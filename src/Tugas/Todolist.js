@@ -29,7 +29,7 @@ function TodoList() {
   };
 
   return (
-    <Card className="container gap-12 mx-auto">
+    <Card className=" container mx-auto ">
       <div className="h3">TodoList</div>
       <form className="flex flex-col p-6 gap-4" onSubmit={handleSubmit}>
         <TextInput

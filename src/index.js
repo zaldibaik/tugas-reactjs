@@ -1,30 +1,36 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
-import ReactDOM from 'react-dom'; // Correct import for ReactDOM
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import Tugas8 from './Tugas/tugas8';
-import Tugas7 from './Tugas/tugas7';
-import Tugas10 from './Tugas/tugas10';
-import Tugas9 from './Tugas/tugas9';
-import TodoList from './Tugas/Todolist';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.css";
+import ReactDOM from "react-dom"; // Correct import for ReactDOM
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import Tugas8 from "./Tugas/tugas8";
+import Tugas7 from "./Tugas/tugas7";
+import Tugas10 from "./Tugas/tugas10";
+import Tugas9 from "./Tugas/tugas9";
+import TodoList from "./Tugas/Todolist";
+import Myfooter from "./Tugas/footer";
 // import Edit from './Edit';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
-    <br />
-    <Tugas7 />
-    <br />
-    <Tugas8 />
-    <br />
-    <Tugas9 />
-    <br></br>
-    <Tugas10 />
-    <br></br>
-    <TodoList/>
+    <header className="relative overflow-x-auto shadow-md sm:rounded-lg">
+      <App />
+    </header>
+    <div className="relative overflow-x-auto shadow-md sm:rounded-lg container mx-auto ">
+      <br />
+      <Tugas7 />
+      <br />
+      <Tugas8 />
+      <br />
+      <Tugas9 />
+      <br></br>
+      <Tugas10 />
+      <br></br>
+      <TodoList />
+    </div>
+    <Myfooter/>
     {/* <Edit /> */}
   </React.StrictMode>
 );

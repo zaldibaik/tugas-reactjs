@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import { Table } from "flowbite-react";
+import { Card, Table } from "flowbite-react";
 
 class Tugas9 extends Component {
   render() {
     return (
-      <div class="relative overflow-x-auto shadow-md sm:rounded-lg container mx-auto ">
+      <Card>
+      <div class="container mx-auto ">
         <div className="h3">Tugas9</div>
         <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
           <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
@@ -124,7 +125,9 @@ class Tugas9 extends Component {
             </tr>
           </tbody>
         </table>
+        
       </div>
+      </Card>
     );
   }
 }
