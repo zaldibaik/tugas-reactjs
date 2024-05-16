@@ -5,6 +5,7 @@ class tugas7 extends React.Component {
   render() {
     return (
         <div className="container mx-auto">
+         <div className="h3">Tugas7</div>
               <Card className="gap-4">
                 <h1 className="title">Hi, Saya John</h1>
                 <hr />

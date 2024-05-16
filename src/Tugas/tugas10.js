@@ -7,13 +7,27 @@ const CrudExample = () => {
   const [inputMataKuliah, setInputMataKuliah] = useState("");
   const [inputNilai, setInputNilai] = useState("");
 
+  // Function to calculate index nilai
+  const getIndexNilai = (nilai) => {
+    if (nilai >= 90) {
+      return 'A';
+    } else if (nilai >= 80) {
+      return 'B';
+    } else if (nilai >= 70) {
+      return 'C';
+    } else {
+      return 'D';
+    }
+  };
+
   // Create
   const addData = () => {
     if (inputValue && inputMataKuliah && inputNilai) {
       const newData = {
         nama: inputValue,
         mataKuliah: inputMataKuliah,
-        nilai: inputNilai
+        nilai: inputNilai,
+        indexNilai: getIndexNilai(inputNilai) // Calculate index nilai
       };
       setData([...data, newData]);
       setInputValue("");
@@ -28,6 +42,7 @@ const CrudExample = () => {
       <Table.Cell>{item.nama}</Table.Cell>
       <Table.Cell>{item.mataKuliah}</Table.Cell>
       <Table.Cell>{item.nilai}</Table.Cell>
+      <Table.Cell>{item.indexNilai}</Table.Cell>
       <Table.Cell>
         <button onClick={() => deleteData(index)}>Delete</button>
       </Table.Cell>
@@ -43,11 +58,13 @@ const CrudExample = () => {
 
   return (
     <div className="container mx-auto ">
+     <div className="h3">Tugas10</div>
       <Table>
         <Table.Head>
           <Table.HeadCell>Nama</Table.HeadCell>
           <Table.HeadCell>Mata Kuliah</Table.HeadCell>
           <Table.HeadCell>Nilai</Table.HeadCell>
+          <Table.HeadCell>Index Nilai</Table.HeadCell>
           <Table.HeadCell>Action</Table.HeadCell>
           <Table.HeadCell>
             <span className="sr-only">Edit</span>
@@ -55,7 +72,7 @@ const CrudExample = () => {
         </Table.Head>
         <Table.Body>{displayData}</Table.Body>
       </Table>
-      <br></br>
+      <br />
       <Card className="max-auto">
         <form className="flex flex-col p-6 gap-4">
           <TextInput
@@ -77,6 +94,7 @@ const CrudExample = () => {
             onChange={(e) => setInputNilai(e.target.value)}
             placeholder="Nilai"
           />
+          
           <Button className="block" onClick={addData}>
             Tambah
           </Button>
@@ -86,7 +104,7 @@ const CrudExample = () => {
   );
 };
 
-const Tugas9 = () => {
+const Tugas10 = () => {
   return (
     <div className="overflow-x-auto">
       <CrudExample />
@@ -94,4 +112,4 @@ const Tugas9 = () => {
   );
 };
 
-export default Tugas9;
+export default Tugas10;

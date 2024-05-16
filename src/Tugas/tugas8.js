@@ -17,6 +17,7 @@ class Tugas8 extends Component {
     const { count } = this.state;
     return (
       <div className="container mx-auto justify-center">
+       <div className="h3">Tugas8</div>
       <Card>
         <p>{count}</p>
         {count > 10 ? (

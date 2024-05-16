@@ -1,6 +1,7 @@
 import { Navbar } from "flowbite-react";
 import "./App.css";
 
+
 function App() {
   return (
     <div>
@@ -10,6 +11,7 @@ function App() {
           <p>mengerjakan tugas sanbercode</p>
         </div>
       </Navbar>
+      
 
     </div>
   );
